@@ -1,0 +1,105 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				// #ifdef MP
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef MP
+				"navigationStyle": "custom" 
+				// #endif
+			}
+		},
+		{
+			"path": "pages/course/course",
+			"style": {
+				"navigationBarTitleText": "课程预约"
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/place/place",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "场馆列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "课程详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/card/card",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/record/record",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "课程记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+			"list": [
+				{
+					"text":"首页",
+					"pagePath":"pages/index/index",
+					"iconPath":"static/tab-home.png",
+					"selectedIconPath":"static/tab-home-current.png"
+				},
+				{
+					"text":"预约",
+					"pagePath":"pages/course/course",
+					"iconPath":"static/tab-booking.png",
+					"selectedIconPath":"static/tab-booking-current.png"
+				},
+				{
+					"text":"我的",
+					"pagePath":"pages/user/user",
+					"iconPath":"static/tab-my.png",
+					"selectedIconPath":"static/tab-my-current.png"
+				}
+			]
+	}
+}
